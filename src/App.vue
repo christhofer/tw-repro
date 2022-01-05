@@ -1,21 +1,15 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue'
+import LogoVue from './components/LogoVue.vue'
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+<div class="p-16 flex flex-col rounded flex-auto">
+  <!-- shadow working -->
+  <div class="shadow-2xl p-4 mx-auto w-full max-w-screen-sm">
+    <img alt="Vue logo" src="./assets/logo.png" class="mx-auto"/>
+  </div>
+  
+  <!-- shadow not working -->
+  <logo-vue></logo-vue>
+</div>
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
